@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react';
+import './index.css';
 
 const shops = [
   { name: "Mama Gold Rice", owner: "Adebayo F.", market: "Bodija", revenue: "₦1.2M", status: "Active" },
