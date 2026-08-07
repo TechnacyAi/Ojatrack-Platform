@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* { font-family: 'Space Grotesk', sans-serif; }
-body { background: #050507; color: white; margin: 0; }
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-thumb { background: #00FF88; border-radius: 10px; }
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Space Grotesk',sans-serif; }
+body { background:#050507; color:white; }
+.oj-container { max-width:1400px; margin:0 auto; padding:20px; }
+.oj-header { display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border:1px solid #222; border-radius:16px; background:#0a0a0f; margin-bottom:20px; }
+.oj-logo { display:flex; align-items:center; gap:10px; font-weight:700; font-size:22px; }
+.oj-logo span { background:#00FF88; color:black; padding:4px 10px; border-radius:8px; }
+.oj-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; margin-bottom:24px; }
+.oj-card { background:#111116; border:1px solid #222; border-radius:16px; padding:20px; }
+.oj-card h3 { color:#888; font-size:14px; margin-bottom:8px; }
+.oj-card .val { font-size:28px; font-weight:700; }
+.oj-card .sub { color:#00FF88; font-size:13px; margin-top:6px; }
+.oj-nav { display:flex; gap:8px; flex-wrap:wrap; margin:20px 0; }
+.oj-nav button { padding:10px 18px; border-radius:10px; border:1px solid #222; background:#111116; color:white; cursor:pointer; font-weight:600; }
+.oj-nav button.active { background:#00FF88; color:black; border-color:#00FF88; }
+.oj-table { width:100%; background:#111116; border:1px solid #222; border-radius:16px; overflow:hidden; }
+.oj-table div.row { display:flex; justify-content:space-between; padding:14px 20px; border-bottom:1px solid #222; }
+.live-dot { width:8px; height:8px; background:#00FF88; border-radius:50%; display:inline-block; animation:pulse 2s infinite; }
+@keyframes pulse { 0%{opacity:1} 50%{opacity:.4} 100%{opacity:1} }
