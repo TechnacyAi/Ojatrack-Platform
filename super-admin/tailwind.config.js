@@ -2,16 +2,12 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      colors: {
-        oja: { black: '#050507', green: '#00FF88' }
-      },
-      fontFamily: {
-        grotesk: ['Space Grotesk', 'sans-serif']
-      }
+      fontFamily: { grotesk: ['Space Grotesk', 'sans-serif'] },
+      colors: { oja: { black: '#050507', green: '#00FF88', gray: '#111116' } }
     },
   },
   plugins: [],
