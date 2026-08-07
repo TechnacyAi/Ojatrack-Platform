@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OjaTrack Shop</title><script src="https://cdn.tailwindcss.com"></script></head>
+<body style="background:#f5f5f7;font-family:sans-serif;padding:16px">
+<div style="max-width:420px;margin:auto;background:white;border-radius:24px;padding:20px;box-shadow:0 10px 40px rgba(0,0,0,.1)">
+<h2 style="font-weight:800;font-size:22px">My Shop - POS</h2>
+<p style="color:#888;font-size:12px">1 Oga, 10 Shops, 0 Stress</p>
+
+<div style="margin-top:20px;background:#080a0f;color:white;border-radius:16px;padding:16px">
+<div style="font-size:11px;color:#00ff88">TODAY</div>
+<div style="font-size:28px;font-weight:bold" id="total">₦0</div>
+</div>
+
+<div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<button onclick="add(5000)" style="background:#00ff88;padding:16px;border-radius:12px;font-weight:bold">Rice ₦5k</button>
+<button onclick="add(3000)" style="background:#e5e7eb;padding:16px;border-radius:12px;font-weight:bold">Beans ₦3k</button>
+<button onclick="add(2500)" style="background:#e5e7eb;padding:16px;border-radius:12px;font-weight:bold">Oil ₦2.5k</button>
+<button onclick="add(1500)" style="background:#e5e7eb;padding:16px;border-radius:12px;font-weight:bold">Garri ₦1.5k</button>
+</div>
+
+<div id="list" style="margin-top:20px;font-size:14px;color:#333"></div>
+<button onclick="alert('Sale saved! CCTV working!')" style="margin-top:20px;width:100%;background:black;color:white;padding:16px;border-radius:12px;font-weight:bold">Complete Sale</button>
+<p style="text-align:center;margin-top:12px;font-size:11px;color:#999">Built for Africa, Starting Nigeria</p>
+</div>
+<script>let t=0;function add(a){t+=a;document.getElementById('total').innerText='₦'+t.toLocaleString();document.getElementById('list').innerHTML+='<div>Sale: ₦'+a+' - '+new Date().toLocaleTimeString()+'</div>'} </script>
+</body></html>
