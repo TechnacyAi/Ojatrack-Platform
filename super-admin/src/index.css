@@ -1,23 +1,31 @@
-html, body, #root { background: #050507 !important; color: white !important; margin:0 !important; padding:0 !important; min-height:100vh !important; font-family: 'Space Grotesk', sans-serif !important; }
-* { box-sizing: border-box; }
-.oj-app { background: #050507 !important; min-height:100vh; color:white; padding: 12px; max-width: 100%; }
-.oj-header { background: #111116 !important; border: 1px solid #222 !important; border-radius: 20px !important; padding: 16px 20px !important; display:flex !important; justify-content:space-between !important; align-items:center !important; margin-bottom: 20px !important; position:relative !important; overflow:hidden !important; }
-.oj-logo-wrap { display:flex !important; align-items:center !important; gap:12px !important; }
-.oj-logo-box { width:52px !important; height:52px !important; background:#00FF88 !important; border-radius:12px !important; display:flex !important; align-items:center !important; justify-content:center !important; font-weight:900 !important; color:black !important; font-size:20px !important; flex-shrink:0 !important; }
-.oj-brand { font-weight:800 !important; font-size:20px !important; line-height:1.1 !important; }
-.oj-domain { color:#00FF88 !important; font-size:13px !important; margin-left:8px !important; }
-.oj-live { color:#00FF88 !important; font-weight:700 !important; font-size:13px !important; display:flex !important; align-items:center !important; gap:6px !important; }
-.oj-dot { width:8px !important; height:8px !important; background:#00FF88 !important; border-radius:50% !important; display:inline-block !important; }
-.oj-stats { display:grid !important; grid-template-columns: 1fr 1fr !important; gap:12px !important; margin-bottom:20px !important; }
-@media(min-width:600px){ .oj-stats { grid-template-columns: repeat(4,1fr) !important; } }
-.oj-card { background:#111116 !important; border:1px solid #232326 !important; border-radius:20px !important; padding:18px !important; }
-.oj-card-label { color:#888 !important; font-size:12px !important; text-transform:uppercase !important; letter-spacing:0.5px !important; margin-bottom:8px !important; }
-.oj-card-val { font-size:26px !important; font-weight:800 !important; color:white !important; margin-bottom:4px !important; }
-.oj-card-sub { color:#00FF88 !important; font-size:12px !important; }
-.oj-tabs { display:flex !important; gap:8px !important; overflow-x:auto !important; padding-bottom:8px !important; margin-bottom:16px !important; -webkit-overflow-scrolling:touch !important; }
-.oj-tab { padding:10px 18px !important; border-radius:12px !important; border:1px solid #222 !important; background:#111116 !important; color:white !important; font-weight:600 !important; font-size:14px !important; white-space:nowrap !important; cursor:pointer !important; }
-.oj-tab.active { background:#00FF88 !important; color:black !important; border-color:#00FF88 !important; }
-.oj-section { background:#111116 !important; border:1px solid #222 !important; border-radius:20px !important; overflow:hidden !important; }
-.oj-row { display:flex !important; justify-content:space-between !important; padding:16px 18px !important; border-bottom:1px solid #222 !important; }
-.oj-row:last-child { border-bottom:none !important; }
-.oj-footer { text-align:center !important; color:#555 !important; font-size:12px !important; padding:20px 0 !important; }
+/* OjaTrack V6 ULTRA - index.css - FORCED BLACK FIX */
+* { margin:0 !important; padding:0 !important; box-sizing:border-box !important; }
+html, body, #root { 
+  background: #050507 !important; 
+  color: #ffffff !important; 
+  min-height: 100vh !important;
+  font-family: 'Inter', -apple-system, sans-serif !important;
+}
+.v6-bg { background: #050507 !important; }
+.v6-card { 
+  background: #111116 !important; 
+  border: 1px solid #232326 !important; 
+  border-radius: 20px !important; 
+}
+.v6-card-hover:hover { border-color: #2e2e33 !important; background: #15151b !important; }
+.v6-green { background: #00FF88 !important; color: #050507 !important; }
+.v6-green-text { color: #00FF88 !important; }
+.v6-green-border { border-color: #00FF88 !important; }
+.v6-border { border-color: #232326 !important; }
+.v6-muted { color: #8b8b9a !important; }
+.v6-input { background: #0a0a0f !important; border: 1px solid #232326 !important; color: #fff !important; border-radius: 12px !important; }
+.v6-tab-active { background: #00FF88 !important; color: #050507 !important; border-radius: 12px !important; font-weight: 700 !important; }
+.v6-badge-active { background: rgba(0,255,136,0.15) !important; color: #00FF88 !important; border: 1px solid rgba(0,255,136,0.3) !important; }
+.v6-badge-pending { background: rgba(255,183,0,0.15) !important; color: #FFB700 !important; border: 1px solid rgba(255,183,0,0.3) !important; }
+.v6-badge-suspended { background: rgba(255,70,70,0.15) !important; color: #FF4646 !important; border: 1px solid rgba(255,70,70,0.3) !important; }
+.v6-progress { background: #1e1e26 !important; border-radius: 999px !important; }
+.v6-progress-fill { background: #00FF88 !important; border-radius: 999px !important; }
+::-webkit-scrollbar { width: 6px !important; height: 6px !important; }
+::-webkit-scrollbar-track { background: #050507 !important; }
+::-webkit-scrollbar-thumb { background: #232326 !important; border-radius: 999px !important; }
+.v6-no-white { background: #050507 !important; }
