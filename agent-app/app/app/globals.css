@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon: #00ff88;
+  --void: #0a0a0a;
+}
+
+body {
+  background: #0a0a0a;
+  color: #e8ffee;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* neon scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #00ff88; border-radius: 4px; }
+::-webkit-scrollbar-track { background: #141414; }
+
+.neon-glow {
+  box-shadow: 0 0 20px rgba(0,255,136,0.15), inset 0 0 0 1px rgba(0,255,136,0.2);
+}
+.neon-text {
+  text-shadow: 0 0 12px rgba(0,255,136,0.8);
+}
